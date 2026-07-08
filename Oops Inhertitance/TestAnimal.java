@@ -1,25 +1,10 @@
-public class Animal {
-
+class Animal {
     void eat() {
         System.out.println("Animal is eating");
     }
 
     void sleep() {
         System.out.println("Animal is sleeping");
-    }
-
-    public static void main(String[] args) {
-
-        Animal a = new Animal();
-        a.eat();
-        a.sleep();
-
-        System.out.println();
-
-        Bird b = new Bird();
-        b.eat();
-        b.sleep();
-        b.fly();
     }
 }
 
@@ -37,5 +22,21 @@ class Bird extends Animal {
 
     void fly() {
         System.out.println("Bird is flying");
+    }
+}
+
+public class TestAnimal {
+    public static void main(String[] args) {
+
+        Animal a = new Animal();
+        a.eat();
+        a.sleep();
+
+        System.out.println();
+
+        Bird b = new Bird();
+        b.eat();
+        b.sleep();
+        b.fly();
     }
 }
